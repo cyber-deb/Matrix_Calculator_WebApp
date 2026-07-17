@@ -31,23 +31,6 @@ Perform essential matrix operations instantly through a clean web interface—no
 > <img width="1909" height="1055" alt="Screenshot 2026-07-17 205253" src="https://github.com/user-attachments/assets/70d74747-7c39-4c39-99a4-e13446779e6d" />
 
 
-Example:
-
-```
-README Images/
-├── homepage.png
-├── multiplication.png
-└── determinant.png
-```
-
-Then display them like:
-
-```md
-![Homepage](README%20Images/homepage.png)
-```
-
----
-
 ## 🛠️ Tech Stack
 
 ### Backend
