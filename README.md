@@ -92,13 +92,13 @@ MatrixCalculator/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/cyber-deb/Matrix_Calculator_WebApp
 ```
 
 Move into the project folder
 
 ```bash
-cd YOUR_REPOSITORY
+cd Matrix_Calculator_WebApp
 ```
 
 Install dependencies
