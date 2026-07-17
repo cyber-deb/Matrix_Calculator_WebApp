@@ -195,7 +195,7 @@ This project is licensed under the **MIT License**.
 
 **Debajyoti Pal**
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/cyber-deb
 
 ---
 
