@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    color:white;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+}
+
+h1{
+    text-align:center;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:35px;
+}
+
+.panel{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+.size-selector{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:end;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.size-selector div{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-bottom:8px;
+    font-size:14px;
+    color:#cbd5e1;
+}
+
+input[type=number]{
+    width:90px;
+    height:45px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    text-align:center;
+    font-size:17px;
+    background:#1e293b;
+    color:white;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    padding:12px 22px;
+    font-size:15px;
+    font-weight:600;
+    color:white;
+    background:#2563eb;
+    transition:.25s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    background:#1d4ed8;
+}
+
+button:active{
+    transform:scale(.97);
+}
+
+/* NEW INFO BOX */
+
+.operation-note{
+    background:#1d4ed8;
+    color:white;
+    border-radius:12px;
+    padding:14px 18px;
+    margin-bottom:25px;
+    text-align:center;
+    font-size:15px;
+    border-left:6px solid #60a5fa;
+}
+
+/* Matrix Area */
+
+.matrices{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-top:20px;
+}
+
+.matrix-card{
+    background:rgba(255,255,255,.05);
+    border-radius:18px;
+    padding:20px;
+    border:1px solid rgba(255,255,255,.1);
+    transition:.3s;
+}
+
+.matrix-card h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.matrix-grid{
+    display:grid;
+    gap:10px;
+    justify-content:center;
+}
+
+.matrix-grid input{
+    width:65px;
+    height:50px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    font-size:17px;
+}
+
+/* NEW */
+
+.disabled-card{
+    opacity:.35;
+    transform:scale(.98);
+    pointer-events:none;
+}
+
+/* Buttons */
+
+.operations{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:40px 0;
+}
+
+.operations button{
+    min-width:150px;
+}
+
+/* Result */
+
+.result{
+    background:#0f172a;
+    border-radius:16px;
+    min-height:120px;
+    padding:25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:auto;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.result table{
+    border-collapse:collapse;
+}
+
+.result td{
+    border:1px solid #475569;
+    padding:12px 18px;
+    text-align:center;
+    font-size:18px;
+}
+
+.error{
+    color:#ef4444;
+    font-size:18px;
+    font-weight:600;
+}
+
+@media(max-width:900px){
+
+    .matrices{
+        grid-template-columns:1fr;
+    }
+
+    .operations button{
+        width:100%;
+    }
+
+    .matrix-grid input{
+        width:55px;
+        height:45px;
+    }
+
+    h1{
+        font-size:32px;
+    }
+
+}
